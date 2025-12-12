@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/output.css" />
+    <link rel="icon" href="./public/images/favicon-192x192.png" />
+    <title>Home | Battle.net</title>
+  </head>
+  <body class="bg-[#15171E]">
+    <!-- #region wraper-->
+    <div class="wraper">
+      <!-- #region header-->
+      <header
+        class="header w-full p-2 bg-amber-600 flex flex-row justify-between items-center fixed"
+      >
+        <div
+          class="burger w-[45px] h-[45px] flex flex-col justify-center items-center gap-[5px] p-[5px] rounded-md transition-all duration-150 hover:bg-white/10"
+        >
+          <div class="line w-[60%] h-[2px] bg-white"></div>
+          <div class="line w-[60%] h-[2px] bg-white"></div>
+          <div class="line w-[60%] h-[2px] bg-white"></div>
+        </div>
+
+        <a
+          href="#"
+          class="account w-[45px] h-[45px] rounded-md flex justify-center items-center transition-all duration-150 hover:bg-white/10"
+        >
+          <img src="./public/images/svg/account.svg" class="w-6 h-6" />
+        </a>
+      </header>
+      <!-- #endregion header-->
+      <!-- #region menuMobile-->
+      <div
+        class="menuMobile w-[85vw] h-screen bg-[#22242c] relative -left-full transition-all duration-200 px-2"
+      >
+        <div class="headermenuMobile p-2">
+          <div
+            class="close w-10 h-10 text-[28px] rounded-md flex justify-center items-center text-white bg-[#353e52]"
+          >
+            &times;
+          </div>
+          <!-- <a href="#" class="w-[147px] h-6 mx-auto relative top-5 text-white">
+            <img src="./svg/battele.svg" alt="">
+          </a> -->
+        </div>
+        <!-- #region acordion-->
+        <div class="overflow-y-scroll h-[calc(100vh-56px)]">
+          <div class="acordion bg-[#22242c] text-white font-not container">
+            <!-- #region acordion1-->
+            <div
+              class="collapse collapse-arrow has-checked:bg-[rgba(255,255,255,0.035)] rounded-md"
+            >
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title bg-transparent w-fit font-not">
+                Warcraft
+              </div>
+              <div
+                class="collapse-content text-sm bg-[rgb(17,18,24)] rounded-xs flex flex-col gap-2"
+              >
+                <div class="p-1 flex flex-col gap-5">
+                  <!-- #region num1.1-->
+                  <div class="flex gap-3">
+                      <img
+                        src="./public/images/svg/menumobile.svg/worldwarcraft.svg"
+                        alt=""
+                         class="size-12"
+                      />
+                    <div class="flex flex-col gap-1">
+                      <div
+                        class="text-[16px] font-not font-bold transition-all duration-100 hover:bg-[rgb(17,18,24)]"
+                      >
+                        World of Warcraft
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Massively Multiplayer RPG
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num1.1-->
+                  <!-- #region num1.2-->
+                  <div class="flex gap-3">
+                      <img
+                        src="./public/images/svg/menumobile.svg/warcraftclasssic.svg"
+                        alt=""
+                         class="size-12"
+                      />
+                    <div class="flex flex-col gap-1">
+                      <div
+                        class="text-[16px] font-not font-bold transition-all duration-100 hover:bg-[rgb(17,18,24)]"
+                      >
+                        World of Warcraft classic
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Massively Multiplayer RPG
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num1.2-->
+                  <!-- #region num1.3-->
+                  <div class="flex gap-3">
+                      <img
+                        src="./public/images/svg/menumobile.svg/warcraftrumble.svg"
+                        alt=""
+                         class="size-12"
+                      />
+                    <div class="flex flex-col gap-1">
+                      <div
+                        class="text-[16px] font-not font-bold transition-all duration-100 hover:bg-[rgb(17,18,24)]"
+                      >
+                        Warcraft Rumble
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action Strategy
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num1.3-->
+                  <!-- #region num1.4-->
+                  <div class="flex gap-3">
+                      <img
+                        src="./public/images/svg/menumobile.svg/warcraft.svg"
+                        alt=""
+                         class="size-12"
+                      />
+                    <div class="flex flex-col gap-1">
+                      <div
+                        class="text-[16px] font-not font-bold transition-all duration-100 hover:bg-[rgb(17,18,24)]"
+                      >
+                        Warcraft
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Real-time Strategy
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num1.4-->
+                </div>
+              </div>
+            </div>
+            <!-- #region acordion2-->
+            <div
+              class="collapse collapse-arrow has-checked:bg-[rgba(255,255,255,0.035)] rounded-md"
+            >
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title bg-transparent w-fit font-not">
+                Diablo
+              </div>
+              <div
+                class="collapse-content text-sm bg-[rgb(17,18,24)] rounded-xs flex flex-col gap-2"
+              >
+                <div class="p-1 flex flex-col gap-5">
+                  <!-- #region num1.1-->
+                  <div class="flex gap-3">
+                      <img
+                        src="./public/images/svg/menumobile.svg/diabloIV.svg"
+                        alt=""
+                         class="size-12"
+                      />
+                    <div class="flex flex-col gap-1">
+                      <div
+                        class="text-[16px] font-not font-bold transition-all duration-100 hover:bg-[rgb(17,18,24)]"
+                      >
+                        Diablo IV
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num1.1-->
+                  <!-- #region num1.2-->
+                  <div class="flex gap-3">
+                      <img
+                        src="./public/images/svg/menumobile.svg/Diablo Immortal.svg"
+                        alt=""
+                         class="size-12"
+                      />
+                    <div class="flex flex-col gap-1">
+                      <div
+                        class="text-[16px] font-not font-bold transition-all duration-100 hover:bg-[rgb(17,18,24)]"
+                      >
+                        Diablo Immortal
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num1.2-->
+                  <!-- #region num1.3-->
+                  <div class="flex gap-3">
+                      <img
+                        src="./public/images/svg/menumobile.svg/Diablo III.svg"
+                        alt=""
+                         class="size-12"
+                      />
+                    <div class="flex flex-col gap-1">
+                      <div
+                        class="text-[16px] font-not font-bold transition-all duration-100 hover:bg-[rgb(17,18,24)]"
+                      >
+                        Diablo III
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num1.3-->
+                  <!-- #region num1.4-->
+                  <div class="flex gap-3">
+                      <img
+                        src="./public/images/svg/menumobile.svg/Diablo II.svg"
+                        alt=""
+                         class="size-12"
+                      />
+                    <div class="flex flex-col gap-1 justify-center">
+                      <div
+                        class="text-[16px] font-not font-bold transition-all duration-100 hover:bg-[rgb(17,18,24)]"
+                      >
+                        Diablo II: Resurrected
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num1.4-->
+
+                  <!-- #region num1.5-->
+                  <div class="flex gap-3 items-center-center">
+                    <img
+                      src="./public/images/svg/menumobile.svg/Diablo.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div
+                      class="flex flex-col gap-1 items-center justify-center"
+                    >
+                      <div
+                        class="text-[16px] font-not font-bold transition-all duration-100 hover:bg-[rgb(17,18,24)]"
+                      >
+                        Diablo
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num1.5-->
+                </div>
+              </div>
+            </div>
+            <!-- #region acordion3-->
+            <div class="collapse collapse-arrow">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title w-fit">
+                How do I update my profile information?
+              </div>
+              <div class="collapse-content text-sm">
+                Go to "My Account" settings and select "Edit Profile" to make
+                changes.
+              </div>
+            </div>
+            <!-- #region acordion4-->
+            <div class="collapse collapse-arrow">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title w-fit">
+                How do I create an account?
+              </div>
+              <div class="collapse-content text-sm">
+                Click the "Sign Up" button in the top right corner and follow
+                the registration process.
+              </div>
+            </div>
+            <!-- #region acordion5-->
+            <div class="collapse collapse-arrow">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title w-fit">
+                How do I create an account?
+              </div>
+              <div class="collapse-content text-sm">
+                Click the "Sign Up" button in the top right corner and follow
+                the registration process.
+              </div>
+            </div>
+            <!-- #region acordion6-->
+            <div class="collapse collapse-arrow">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title w-fit">
+                How do I create an account?
+              </div>
+              <div class="collapse-content text-sm">
+                Click the "Sign Up" button in the top right corner and follow
+                the registration process.
+              </div>
+            </div>
+            <!-- #region acordion7-->
+            <div class="collapse collapse-arrow">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title w-fit">
+                How do I create an account?
+              </div>
+              <div class="collapse-content text-sm">
+                Click the "Sign Up" button in the top right corner and follow
+                the registration process.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- #endregion acordion-->
+      </div>
+      <!-- #endregion menuMobile-->
+    </div>
+    <!-- #endregion wraper-->
+
+    <script>
+      let burger = document.querySelector(".burger");
+      let close = document.querySelector(".close");
+      let menuMobile = document.querySelector(".menuMobile");
+      burger.addEventListener("click", () => {
+        menuMobile.classList.add("!left-0");
+      });
+      close.addEventListener("click", () => {
+        menuMobile.classList.remove("!left-0");
+        menuMobile.classList.add("!-left-[100%]");
+      });
+    </script>
+  </body>
+</html>

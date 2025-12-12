@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: all;
+}
+
+@layer base {
+  @font-face {
+    font-family: "objectSans";
+    src: url("/public/fonts/ObjectSans/ObjectSans-Regular.eot") format("eot"),
+      url("/public/fonts/ObjectSans/ObjectSans-Regular.ttf") format("ttf"),
+      url("/public/fonts/ObjectSans/ObjectSans-Regular.woff") format("woff"),
+      url("/public/fonts/ObjectSans/ObjectSans-Regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "DMSans";
+    src: url("/public/fonts/DMsans/DMSans9pt-Regular.eot") format("eot"),
+      url("/public/fonts/DMsans/DMSans9pt-Regular.ttf") format("ttf"),
+      url("/public/fonts/DMsans/DMSans9pt-Regular.woff") format("woff"),
+      url("/public/fonts/DMsans/DMSans9pt-Regular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "NotoSans";
+    src: url("/public/fonts/NotoSans/NotoSans.eot") format("eot"),
+      url("/public/fonts/NotoSans/NotoSans.ttf") format("ttf"),
+      url("/public/fonts/NotoSans/NotoSans.woff") format("woff"),
+      url("/public/fonts/NotoSans/NotoSans.woff2") format("woff2");
+  }
+  * {
+    font-family: "DMSans", sans-serif;
+  }
+}
+
+@theme {
+  --font-dm: "DMSans";
+  --font-obj: "objectSans";
+  --font-not: "NotoSans";
+  --color-background: #15171E
+}
+id{
+  color: rgb(17, 18, 24);
+}
