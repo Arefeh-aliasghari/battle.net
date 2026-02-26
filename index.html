@@ -1,48 +1,1009 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr"  class="bg-background ">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/css/output.css" />
     <link rel="icon" href="./public/images/favicon-192x192.png" />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
     <title>Home | Battle.net</title>
   </head>
-  <body class="bg-[#15171E]">
+  <body>
     <!-- #region wraper-->
-    <div class="wraper">
+    <div class="wraper w-full">
       <!-- #region header-->
-      <header
-        class="header w-full p-2 bg-amber-600 flex flex-row justify-between items-center fixed"
-      >
+      <header class="" >
         <div
-          class="burger w-[45px] h-[45px] flex flex-col justify-center items-center gap-[5px] p-[5px] rounded-md transition-all duration-150 hover:bg-white/10"
+          class="header w-full p-2 container max-w-400 flex lg:hidden flex-row justify-between items-center fixed"
         >
-          <div class="line w-[60%] h-[2px] bg-white"></div>
-          <div class="line w-[60%] h-[2px] bg-white"></div>
-          <div class="line w-[60%] h-[2px] bg-white"></div>
+          <div
+            class="burger container max-w-400 w-11.5 h-11.5 flex flex-col justify-center items-center gap-1.25 p-1.25 rounded-md transition-all duration-150 hover:bg-white/10"
+          >
+            <div class="line w-5 h-0.5 bg-white"></div>
+            <div class="line w-5 h-0.5 bg-white"></div>
+            <div class="line w-5 h-0.5 bg-white"></div>
+          </div>
+          <a href="/">
+            <img src="./public/images/svg/battele.svg" class="w-38 h-auto" />
+          </a>
+          <a
+            href="#"
+            class="account w-11.25 h-11.25 rounded-md flex justify-center items-center transition-all duration-150 hover:bg-white/10"
+          >
+            <img src="./public/images/svg/account.svg" class="w-6 h-6" />
+          </a>
         </div>
-
-        <a
-          href="#"
-          class="account w-[45px] h-[45px] rounded-md flex justify-center items-center transition-all duration-150 hover:bg-white/10"
+        <div
+          class="hidden lg:flex items-center justify-between bg-background px-4 h-18"
         >
-          <img src="./public/images/svg/account.svg" class="w-6 h-6" />
-        </a>
+          <a href="#">
+            <img src="./public/images/svg/battele.svg" class="w-50 h-auto" title="Battle.net"/>
+          </a>
+          <div class="flex items-center">
+            <div
+              class="flex items-center gap-3 rounded-[5px] duration-150 transition-all hover:bg-[#23252B] p-4 group"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="gray"
+                class="w-6 duration-150 transition-all group-hover:fill-white"
+                viewBox="0 0 24 24"
+                part="icon"
+                aria-hidden="true"
+              >
+                <path
+                  d="m18.06 9.646-.707-.707a.5.5 0 0 0-.707 0L13 12.586V4a1 1 0 1 0-2 0v8.586L7.353 8.939a.5.5 0 0 0-.707 0l-.707.707a.5.5 0 0 0 0 .708l5.707 5.707a.5.5 0 0 0 .707 0l5.708-5.707a.5.5 0 0 0 0-.708Z"
+                ></path>
+                <path
+                  d="M3.5 16a.5.5 0 0 0-.5.5V19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5V19H5v-2.5a.5.5 0 0 0-.5-.5z"
+                ></path>
+              </svg>
+              <span class="text-white font-bold ">Download Battle.net</span>
+            </div>
+            <div
+              class=" 
+              flex items-center gap-3 rounded-[5px] duration-150 transition-all hover:bg-[#23252B] p-4 group"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="gray"
+                viewBox="0 0 24 24"
+                part="icon"
+                aria-hidden="true"
+                class="w-6 duration-150 transition-all group-hover:fill-white"
+              >
+                <path
+                  d="M11.104 8.068c-.13.046-.248.118-.527.364-.252.223-.456.591-.543 1.048-.052.27-.27.497-.546.497h-1c-.277 0-.503-.225-.474-.5.103-.955.504-1.895 1.24-2.544.323-.285.676-.57 1.179-.75.482-.171 1.018-.217 1.675-.217 1.407 0 3.022.477 3.67 2.047.624 1.509-.02 3.086-1.447 3.75-.128.06-.302.135-.454.202l-.253.112a3.3 3.3 0 0 0-.47.248.5.5 0 0 0-.15.132c-.003.005-.016.024-.016.09v.953a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-.952c0-.924.5-1.512 1.047-1.881.252-.17.524-.303.762-.411.136-.062.238-.106.335-.148.112-.049.216-.094.356-.159.463-.215.654-.66.442-1.173-.186-.451-.73-.81-1.822-.81-.594 0-.853.048-1.004.102M11 16.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"
+                ></path>
+                <path
+                  d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10m-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0"
+                ></path>
+              </svg>
+              <span class="text-white font-bold">Support</span>
+            </div>
+
+            <div class="dropdown dropdown-hover dropdown-bottom dropdown-end">
+              <div
+                tabindex="0"
+                role="button"
+                class="flex items-center gap-3 rounded-[5px] duration-150 transition-all hover:bg-[#23252B] p-4 group"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="gray"
+                  viewBox="0 0 24 24"
+                  part="icon"
+                  aria-hidden="true"
+                  class="w-6 duration-150 transition-all group-hover:fill-white"
+                >
+                  <path
+                    d="M15.75 9.75a3.73 3.73 0 0 1-1.433 2.949A3.73 3.73 0 0 1 12 13.5a3.73 3.73 0 0 1-3.023-1.53 3.75 3.75 0 1 1 6.773-2.22m-5.5 0a1.75 1.75 0 1 0 3.5 0 1.75 1.75 0 0 0-3.5 0"
+                  ></path>
+                  <path
+                    d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10m5.047-4.73q.223.29.393.595A7.97 7.97 0 0 1 12 20a7.97 7.97 0 0 1-5.445-2.139l.005.005q.171-.305.393-.596c.442-.575.92-.943 1.36-1.13a7.37 7.37 0 0 0 3.687.992c1.34 0 2.594-.364 3.687-.993.44.188.919.556 1.36 1.13Zm-8.835-3.194c-1.188.268-2.237 1.115-2.99 2.172H5.22a8 8 0 1 1 13.56 0c-.755-1.056-1.804-1.904-2.992-2.172a4 4 0 0 0-.487-.075c-.947.715-2.082 1.131-3.3 1.131-1.22 0-2.355-.416-3.302-1.131q-.247.022-.487.075"
+                  ></path>
+                </svg>
+                <span class="text-white font-bold">Account</span>
+              </div>
+              <div
+                tabindex="1"
+                
+                class="dropdown-content menu bg-[#1e212b] rounded-sm z-1 w-72 shadow-sm border-gray-600 p-0 gap-0"
+              >
+                <button
+                  class="bg-[#0074e0] font-bold text-white font-obj h-12 rounded-md text-base m-6 mb-4 transition-all duration-150 hover:bg-[#2e90eb]"
+                >
+                <a href="./logIn.html">Log In</a>
+                 
+                </button>
+                <div
+                  class="flex flex-row justify-start items-center gap-2 rounded-[5px] duration-150 transition-all hover:bg-[#23252B] p-3 group mx-2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="gray"
+                    viewBox="0 0 24 24"
+                    part="icon"
+                    aria-hidden="true"
+                    class="w-6 duration-150 transition-all group-hover:fill-white"
+                  >
+                    <path
+                      d="M11.675 13.771a6.5 6.5 0 0 0-.954 2.042 6.8 6.8 0 0 1-3.048-.864c-.335.163-.705.457-1.057.916q-.141.184-.257.375a6.97 6.97 0 0 0 4.159 1.744c.052.71.218 1.388.48 2.016a9 9 0 1 1 8.974-8.282A6.5 6.5 0 0 0 18 11.076V11a7 7 0 1 0-12.973 3.651c.762-.995 1.821-1.75 3.002-1.85.853.643 1.874 1.018 2.971 1.018q.343 0 .675-.048"
+                    ></path>
+                    <path
+                      d="M14.375 8.975a3.375 3.375 0 1 0-6.75 0 3.375 3.375 0 0 0 6.75 0m-2 0a1.375 1.375 0 1 1-2.75 0 1.375 1.375 0 0 1 2.75 0M16.455 13h1.093a.5.5 0 0 1 .492.412l.167.936a.55.55 0 0 0 .288.381q.146.079.282.171a.55.55 0 0 0 .49.076l1.051-.368a.5.5 0 0 1 .59.209l.518.837a.5.5 0 0 1-.12.659l-.943.725a.55.55 0 0 0-.205.445v.058a.55.55 0 0 0 .205.445l.943.726a.5.5 0 0 1 .12.659l-.516.837a.5.5 0 0 1-.591.209l-1.053-.369a.55.55 0 0 0-.49.076q-.135.093-.282.171a.55.55 0 0 0-.289.382l-.166.935a.5.5 0 0 1-.493.412h-1.093a.5.5 0 0 1-.492-.412l-.167-.935a.55.55 0 0 0-.288-.382 3 3 0 0 1-.282-.171.55.55 0 0 0-.49-.075l-1.05.367a.5.5 0 0 1-.591-.209l-.517-.837a.5.5 0 0 1 .12-.659l.94-.724a.55.55 0 0 0 .206-.445v-.06a.55.55 0 0 0-.205-.445l-.942-.725a.5.5 0 0 1-.12-.659l.517-.837a.5.5 0 0 1 .59-.21l1.052.37a.55.55 0 0 0 .49-.076q.136-.093.283-.172a.55.55 0 0 0 .29-.382l.166-.934a.5.5 0 0 1 .492-.412M17 19.09a1.58 1.58 0 1 0 0-3.157 1.58 1.58 0 0 0 0 3.158Z"
+                    ></path>
+                  </svg>
+                  <span class="text-gray-200 font-bold w-fit"
+                    >Account Settings</span
+                  >
+                </div>
+                <div
+                  class="flex flex-row justify-start items-center gap-2 rounded-[5px] duration-150 transition-all hover:bg-[#23252B] p-3 group mx-2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="gray"
+                    viewBox="0 0 24 24"
+                    part="icon"
+                    aria-hidden="true"
+                    class="w-6 duration-150 transition-all group-hover:fill-white"
+                  >
+                    <path
+                      d="M10.55 20.03 12 21.35l1.45-1.31.04-.036C18.616 15.344 22 12.27 22 8.5 22 5.42 19.58 3 16.5 3c-1.116 0-2.204.745-3.128 1.617A19 19 0 0 0 12 6.09c-.39-.459-.856-.986-1.372-1.473C9.704 3.745 8.616 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.777 3.394 6.855 8.537 11.518zm1.557-1.472-.002.002-.1.09-.109-.099-.003-.003c-2.615-2.371-4.623-4.198-6.001-5.883C4.536 11.008 4 9.733 4 8.5 4 6.525 5.525 5 7.5 5c.197 0 .607.121 1.25.631.609.484 1.193 1.129 1.727 1.756L12 9.175l1.523-1.788c.534-.627 1.118-1.272 1.727-1.756.643-.51 1.053-.631 1.25-.631C18.475 5 20 6.525 20 8.5c0 1.233-.537 2.508-1.892 4.167-1.379 1.686-3.386 3.515-6 5.89Z"
+                    ></path>
+                  </svg>
+                  <span class="text-gray-200 font-bold w-fit">Wish List</span>
+                </div>
+                <div
+                  class="flex flex-row justify-start items-center gap-2 rounded-[5px] duration-150 transition-all hover:bg-[#23252B] p-3 group mx-2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="gray"
+                    viewBox="0 0 24 24"
+                    part="icon"
+                    aria-hidden="true"
+                    class="w-6 duration-150 transition-all group-hover:fill-white"
+                  >
+                    <path
+                      d="M2 2h2v16H2zm3 20v-2H3v2zm4-2H7v2h2zm2 0h5v2h-5zm10 0h-3v2h3zm1-18h-3v16h3zm-6 0h1v16h-1zm-2 0h-2v16h2zM6 2h4v16H6z"
+                    ></path>
+                  </svg>
+                  <span class="text-gray-200 font-bold w-fit">Redeem Code</span>
+                </div>
+                <div
+                  class="flex flex-row justify-start items-center gap-2 rounded-[5px] duration-150 transition-all hover:bg-[#23252B] p-3 group mx-2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="gray"
+                    viewBox="0 0 24 24"
+                    part="icon"
+                    aria-hidden="true"
+                    class="w-6 duration-150 transition-all group-hover:fill-white"
+                  >
+                    <path
+                      d="M13.5 2a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5H15v16h-1.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H17v-3h3a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3V4h1.5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM17 9h3v6h-3zM4 7h9v2H4v6h9v2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2"
+                    ></path>
+                  </svg>
+                  <span class="text-gray-200 font-bold w-fit"
+                    >Change BattleTag</span
+                  >
+                </div>
+                <div class="bg-gray-700 p-2 mt-2 rounded-b-sm">
+                  <div
+                    class="flex flex-row justify-start items-center gap-2 rounded-[5px] duration-150 transition-all hover:bg-[#23252B] p-3 group"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="gray"
+                      viewBox="0 0 24 24"
+                      part="icon"
+                      aria-hidden="true"
+                      class="w-6 duration-150 transition-all group-hover:fill-white"
+                    >
+                      <path
+                        d="M3.114 20.31 4 15 15.585 3.414a2 2 0 0 1 2.828 0l2.172 2.172a2 2 0 0 1 0 2.828L9 20l-5.31.885a.5.5 0 0 1-.575-.576Zm4.924-2.177 8.34-8.34-2.172-2.172-8.34 8.34-.434 2.606zm9.754-9.754L19.171 7l-2.172-2.172-1.378 1.38z"
+                      ></path>
+                    </svg>
+                    <span class="text-gray-200 font-bold w-fit"
+                      >Create Account</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden container max-w-400 lg:flex gap-2 px-4 fixed ">
+          <!-- #region Warcraft-->
+          <div class="bg-[#23252B] h-14 container  max-w-400  rounded-md font-not text-[#ffffffb8] text-[14px] font-bold flex  ">
+            <div class="flex items-center rounded-l-md w-30 bg-amber-00 cursor-pointer ">
+              <div class="dropdown dropdown-hover ">
+             <div tabindex="0" role="button" class="transition-all hover:bg-[#303237] duration-150  hover:text-white   bg-[#23252B] h-14 w-30 rounded-l-2xl font-not text-[#ffffffb8] text-[14px] font-bold flex gap-5 ">
+              <span class="flex mx-4 items-center  ">Warcraft</span>
+             </div>
+              <ul tabindex="-1" class="dropdown-content menu  bg-[#1A1C23] rounded-box z-1 w-80 p-2 shadow-sm top-16 border-white flex flex-col gap-5   ">
+                <!-- #region num1.1-->
+                   <li><a class="hover:bg-[#383a40]"> <div class="flex gap-3 hover:text-white" title="World of Warcraft">
+                    <img 
+                      src="./public/images/svg/menumobile/worldwarcraft.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        World of Warcraft
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Massively Multiplayer RPG
+                      </div>
+                    </div>
+                  </div></a></li>
+                  <!-- #endregion num1.1-->
+
+                  <!-- #region num1.2-->
+                    <li><a class="hover:bg-[#383a40]">  <div class="flex gap-3 hover:text-white" title="World of Warcraft classic">
+                    <img
+                      src="./public/images/svg/menumobile/warcraftclasssic.svg"
+                      alt=""
+                      class="size-10"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        World of Warcraft classic
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Massively Multiplayer RPG
+                      </div>
+                    </div>
+                  </div></a></li>
+                  <!-- #endregion num1.2-->
+
+              <!-- #region num1.3-->
+                  <li><a class="hover:bg-[#383a40]">
+                  <div class="flex gap-3 hover:text-white" title=" Warcraft Rumble">
+                    <img
+                      src="./public/images/svg/menumobile/warcraftrumble.svg"
+                      alt=""
+                      class="size-10"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Warcraft Rumble
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action Strategy
+                      </div>
+                    </div>
+                  </div>
+                  </a></li>
+                  <!-- #endregion num1.3-->
+                  
+                  <!-- #region num1.4-->
+                   <li><a class="hover:bg-[#383a40]">
+                  <div class="flex gap-3 hover:text-white" title="Warcraft">
+                    <img
+                      src="./public/images/svg/menumobile/warcraft.svg"
+                      alt=""
+                      class="size-10"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">Warcraft</div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Real-time Strategy
+                      </div>
+                    </div>
+                  </div>
+                 </a></li>
+                  
+  </ul>
+              </div>
+              <svg class="meka-menu-drop-down-label__icon absolute left-23" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" slot="icon">
+					    <path d="M18.646 9.354a.5.5 0 0 0 0-.707l-.703-.704a.5.5 0 0 0-.707 0L12 13.17 6.764 7.943a.5.5 0 0 0-.707 0l-.703.704a.5.5 0 0 0 0 .707l6.292 6.293a.5.5 0 0 0 .708 0l6.293-6.293Z"></path>
+				      </svg>
+            </div>
+            <!-- #endregion num1.4-->
+             <!-- #endregion Warcraft-->
+
+            <!-- #region DiabloDesktop -->
+              <div class="flex items-center rounded-l-md w-30 bg-amber-00 cursor-pointer ">
+                 <div class="dropdown dropdown-hover ">
+             <div tabindex="0" role="button" class="transition-all hover:bg-[#303237] duration-150 hover:text-white   bg-[#23252B] h-14 w-25  font-not text-[#ffffffb8] text-[14px] font-bold flex  ">
+              <span class="mx-4 flex items-center">Diablo</span>
+             </div>
+              <ul tabindex="-1" class="dropdown-content menu  bg-[#1A1C23] rounded-box z-1 w-80 p-2 shadow-sm top-16 border-white flex flex-col gap-5   ">
+                <!-- #region num2.1-->
+                   <li><a class="hover:bg-[#383a40]"> <div class="flex gap-3 hover:text-white" title="Diablo IV">
+                    <img 
+                      src="./public/images/svg/menumobile/diabloIV.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Diablo IV
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div></a></li>
+                  <!-- #endregion num2.1-->
+
+                  <!-- #region num2.2-->
+                    <li><a class="hover:bg-[#383a40]">  <div class="flex gap-3 hover:text-white" title=" Diablo Immortal">
+                    <img
+                      src="./public/images/svg/menumobile/DiabloImmortal.svg"
+                      alt=""
+                      class="size-10"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Diablo Immortal
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                       Action RPG
+                      </div>
+                    </div>
+                  </div></a></li>
+                  <!-- #endregion num2.2-->
+
+              <!-- #region num2.3-->
+                  <li><a class="hover:bg-[#383a40]">
+                  <div class="flex gap-3 hover:text-white" title=" Diablo III">
+                    <img
+                      src="./public/images/svg/menumobile/DiabloIII.svg"
+                      alt=""
+                      class="size-10"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Diablo III
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                         Action RPG
+                      </div>
+                    </div>
+                  </div>
+                  </a></li>
+                  <!-- #endregion num2.3-->
+                  
+                  <!-- #region num2.4-->
+                   <li><a class="hover:bg-[#383a40]">
+                  <div class="flex gap-3 hover:text-white" title="Diablo II: Resurrected">
+                    <img
+                      src="./public/images/svg/menumobile/DiabloII.svg"
+                      alt=""
+                      class="size-10"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold"> Diablo II: Resurrected</div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div>
+                 </a></li>
+                  <!-- #endregion num2.4-->
+
+                  <!-- #region num2.5-->
+                   <li><a class="hover:bg-[#383a40]">
+                  <div class="flex gap-3 hover:text-white" title="Diablo">
+                    <img
+                      src="./public/images/svg/menumobile/Diablo.svg"
+                      alt=""
+                      class="size-10"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold"> Diablo</div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div>
+                 </a></li>
+                  <!-- #endregion num2.5-->
+  </ul>
+              </div>
+              
+              <svg class="meka-menu-drop-down-label__icon absolute left-50" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" slot="icon">
+					    <path d="M18.646 9.354a.5.5 0 0 0 0-.707l-.703-.704a.5.5 0 0 0-.707 0L12 13.17 6.764 7.943a.5.5 0 0 0-.707 0l-.703.704a.5.5 0 0 0 0 .707l6.292 6.293a.5.5 0 0 0 .708 0l6.293-6.293Z"></path>
+				      </svg>
+            </div>
+            <!-- #endregion DiabloDesktop -->
+
+             <!-- #region HearthstoneDesktop -->
+              <div class="flex items-center rounded-l-md w-30 bg-amber-00 cursor-pointer">
+                <div class="dropdown dropdown-hover ">
+                  <div tabindex="0" role="button" class="transition-all hover:bg-[#303237] duration-150 hover:text-white   bg-[#23252B] h-14 w-30  font-not text-[#ffffffb8] text-[14px] font-bold flex  ">
+              <span class="mx-4 flex items-center ">Overwatch</span>
+              <ul tabindex="-1" class="dropdown-content menu  bg-[#1A1C23] rounded-box z-1 w-80 p-2 shadow-sm top-16 border-white flex flex-col gap-5   ">
+                <!-- #region num3.1-->
+                   <li><a class="hover:bg-[#383a40]"> <div class="flex gap-3 hover:text-white" title="Diablo IV">
+                    <img 
+                      src="./public/images/svg/menumobile/diabloIV.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Diablo IV
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div></a></li>
+                   <!-- #endregion num3.1-->
+                   </ul>
+              </div>
+             </div>
+              
+              <svg class="meka-menu-drop-down-label__icon absolute left-86" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" slot="icon">
+					    <path d="M18.646 9.354a.5.5 0 0 0 0-.707l-.703-.704a.5.5 0 0 0-.707 0L12 13.17 6.764 7.943a.5.5 0 0 0-.707 0l-.703.704a.5.5 0 0 0 0 .707l6.292 6.293a.5.5 0 0 0 .708 0l6.293-6.293Z"></path>
+				      </svg>
+            </div>
+            <!-- #endregion HearthstoneDesktop -->
+
+            <!-- #region OverwatchDesktop -->
+              <div class="flex items-center rounded-l-md w-30 bg-amber-00 cursor-pointer">
+                <div class="dropdown dropdown-hover ">
+                  <div tabindex="0" role="button" class="transition-all hover:bg-[#303237] duration-150 p-2 hover:text-white   bg-[#23252B] h-14 w-30  font-not text-[#ffffffb8] text-[14px] font-bold flex  ">
+              <span class="mx-2 flex items-center ">Hearthstone</span>
+              <ul tabindex="-1" class="dropdown-content menu  bg-[#1A1C23] rounded-box z-1 w-80 p-2 shadow-sm top-16 border-white flex flex-col gap-5   ">
+                <!-- #region num4.1-->
+                   <li><a class="hover:bg-[#383a40]"> <div class="flex gap-3 hover:text-white" title="Diablo IV">
+                    <img 
+                      src="./public/images/svg/menumobile/diabloIV.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Diablo IV
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div></a></li>
+                  <!-- #endregion num4.1-->
+                   </ul>
+              </div>
+             </div>
+              <svg class="meka-menu-drop-down-label__icon absolute left-119" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" slot="icon">
+					    <path d="M18.646 9.354a.5.5 0 0 0 0-.707l-.703-.704a.5.5 0 0 0-.707 0L12 13.17 6.764 7.943a.5.5 0 0 0-.707 0l-.703.704a.5.5 0 0 0 0 .707l6.292 6.293a.5.5 0 0 0 .708 0l6.293-6.293Z"></path>
+				      </svg>
+            </div>
+            <!-- #endregion OverwatchDesktop -->
+
+            <!-- #region StarCraftDesktop -->
+              <div class="flex items-center rounded-l-md w-30 bg-amber-00 cursor-pointer ">
+                <div class="dropdown dropdown-hover ">
+                  <div tabindex="0" role="button" class="transition-all hover:bg-[#303237] duration-150 p-2 hover:text-white   bg-[#23252B] h-14 w-30  font-not text-[#ffffffb8] text-[14px] font-bold flex  ">
+              <span class="mx-5 flex items-center ">StarCraft</span>
+              <ul tabindex="-1" class="dropdown-content menu  bg-[#1A1C23] rounded-box z-1 w-80 p-2 shadow-sm top-16 border-white flex flex-col gap-5   ">
+                <!-- #region num5.1-->
+                   <li><a class="hover:bg-[#383a40]"> <div class="flex gap-3 hover:text-white" title="Diablo IV">
+                    <img 
+                      src="./public/images/svg/menumobile/diabloIV.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Diablo IV
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div></a></li>
+                  <!-- #endregion num5.1-->
+                   <!-- #region num5.2-->
+                   <li><a class="hover:bg-[#383a40]"> <div class="flex gap-3 hover:text-white" title="Diablo IV">
+                    <img 
+                      src="./public/images/svg/menumobile/diabloIV.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Diablo IV
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div></a></li>
+                  <!-- #endregion num5.2-->
+                   </ul>
+              </div>
+             </div>
+              <svg class="meka-menu-drop-down-label__icon absolute left-148" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" slot="icon">
+					    <path d="M18.646 9.354a.5.5 0 0 0 0-.707l-.703-.704a.5.5 0 0 0-.707 0L12 13.17 6.764 7.943a.5.5 0 0 0-.707 0l-.703.704a.5.5 0 0 0 0 .707l6.292 6.293a.5.5 0 0 0 .708 0l6.293-6.293Z"></path>
+				      </svg>
+            </div>
+            <!-- #endregion StarCraftDesktop -->
+
+            <!-- #region Call of DutyDesktop -->
+              <div class="flex items-center rounded-l-md w-30 bg-amber-00 cursor-pointer">
+                <div class="dropdown dropdown-hover ">
+                  <div tabindex="0" role="button" class="transition-all hover:bg-[#303237] duration-150   hover:text-white   bg-[#23252B] h-14 w-30  font-not text-[#ffffffb8] text-[14px] font-bold flex  ">
+              <span class="mx-5 flex items-center ">Call of Duty</span>
+              <ul tabindex="-1" class="dropdown-content  overflow-y-auto overflow-x-hidden max-h-96 menu bg-[#1A1C23]rounded-box z-1 w-80 p-2 shadow-sm top-16 border-white flex flex-col gap-5" style="display:block; max-height:24rem; overflow-y:auto; -webkit-overflow-scrolling:touch;">
+                <!-- #region num6.1-->
+                   <li class=""><a class="hover:bg-[#383a40]"> <div class="flex gap-3 hover:text-white" title="Diablo IV">
+                    <img 
+                      src="./public/images/svg/menumobile/diabloIV.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Diablo IV
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div></a></li>
+                  <!-- #endregion num6.1-->
+                   <!-- #region num6.2-->
+                   <li><a class="hover:bg-[#383a40]"> <div class="flex gap-3 hover:text-white" title="Diablo IV">
+                    <img 
+                      src="./public/images/svg/menumobile/diabloIV.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Diablo IV
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div></a></li>
+                  <!-- #endregion num6.2-->
+                   <!-- #region num6.3-->
+                   <li><a class="hover:bg-[#383a40]"> <div class="flex gap-3 hover:text-white" title="Diablo IV">
+                    <img 
+                      src="./public/images/svg/menumobile/diabloIV.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Diablo IV
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div></a></li>
+                  <!-- #endregion num6.3-->
+                   <!-- #region num6.4-->
+                   <li><a class="hover:bg-[#383a40]"> <div class="flex gap-3 hover:text-white" title="Diablo IV">
+                    <img 
+                      src="./public/images/svg/menumobile/diabloIV.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Diablo IV
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div></a></li>
+                  <!-- #endregion num6.4-->
+                   <!-- #region num6.5-->
+                   <li><a class="hover:bg-[#383a40]"> <div class="flex gap-3 hover:text-white" title="Diablo IV">
+                    <img 
+                      src="./public/images/svg/menumobile/diabloIV.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Diablo IV
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div></a></li>
+                  <!-- #endregion num6.5-->
+                    <!-- #region num6.6-->
+                   <li><a class="hover:bg-[#383a40]"> <div class="flex gap-3 hover:text-white" title="Diablo IV">
+                    <img 
+                      src="./public/images/svg/menumobile/diabloIV.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Diablo IV
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div></a></li>
+                  <!-- #endregion num6.6-->
+                   <!-- #region num6.7-->
+                   <li><a class="hover:bg-[#383a40]"> <div class="flex gap-3 hover:text-white" title="Diablo IV">
+                    <img 
+                      src="./public/images/svg/menumobile/diabloIV.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Diablo IV
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div></a></li>
+                  <!-- #endregion num6.7-->
+                   <!-- #region num6.8-->
+                   <li><a class="hover:bg-[#383a40]"> <div class="flex gap-3 hover:text-white" title="Diablo IV">
+                    <img 
+                      src="./public/images/svg/menumobile/diabloIV.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Diablo IV
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div></a></li>
+                  <!-- #endregion num6.8-->
+                   <!-- #region num6.9-->
+                   <li><a class="hover:bg-[#383a40]"> <div class="flex gap-3 hover:text-white" title="Diablo IV">
+                    <img 
+                      src="./public/images/svg/menumobile/diabloIV.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Diablo IV
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div></a></li>
+                  <!-- #endregion num6.9-->
+                   <!-- #region num6.10-->
+                   <li><a class="hover:bg-[#383a40]"> <div class="flex gap-3 hover:text-white" title="Diablo IV">
+                    <img 
+                      src="./public/images/svg/menumobile/diabloIV.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Diablo IV
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Action RPG
+                      </div>
+                    </div>
+                  </div></a></li>
+                  <!-- #endregion num6.10-->
+                   </ul>
+              </div>
+             </div>
+              <svg class="meka-menu-drop-down-label__icon absolute left-179" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" slot="icon">
+					    <path d="M18.646 9.354a.5.5 0 0 0 0-.707l-.703-.704a.5.5 0 0 0-.707 0L12 13.17 6.764 7.943a.5.5 0 0 0-.707 0l-.703.704a.5.5 0 0 0 0 .707l6.292 6.293a.5.5 0 0 0 .708 0l6.293-6.293Z"></path>
+				      </svg>
+            </div>
+            <!-- #endregion Call of DutyDesktop -->
+
+            <!-- #region MoreDesktop -->
+              <div class="flex items-center  w-20 transition-all bg-amber-00 cursor-pointer">
+                <div class="dropdown dropdown-hover">
+                  <div tabindex="0" role="button" class="transition-all hover:bg-[#303237] duration-150 hover:text-white bg-[#23252b] h-14  font-not w-20 text-[#ffffffb8] tecxt-[14px] font-bold flex">
+                    <span class="mx-4 flex items-center">More</span>
+                    <ul tabindex="-1" class="dropdown-content menu bg-[#1A1C23] rounded-box z-1  p-2 shadow-sm top-16 border-white flex flex-col gap-5  h-110 w-140 ">
+                      <!-- #region num7.1-->
+                      <li>
+                        <a class="hover:bg-[#383a40]">
+                          <div class="flex gap-3 hover:text-white " title="Avowed">
+                             <img 
+                      src="./public/images/svg/menumobile/Avowed.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1 ">
+                      <div class="text-[12px] font-not font-bold ">
+                         Avowed
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        First-person Fantasy RPG
+                      </div>
+                    </div>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- #endregion num7.1-->
+                       <!-- #region num7.2-->
+                      <li>
+                        <a class="hover:bg-[#383a40]">
+                          <div class="flex gap-3 hover:text-white" title="Blizzard Arcade Collection">
+                             <img 
+                      src="./public/images/svg/menumobile/Blizzard.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                       Blizzard Arcade Collection
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Bundle
+                      </div>
+                    </div>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- #endregion num7.2-->
+                       <!-- #region num7.3-->
+                      <li>
+                        <a class="hover:bg-[#383a40]">
+                          <div class="flex gap-3 hover:text-white" title="Crash Bandicoot 4">
+                             <img 
+                      src="./public/images/svg/menumobile/crush.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Crash Bandicoot 4
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                       Platformer
+                      </div>
+                    </div>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- #endregion num7.3-->
+                       <!-- #region num7.4-->
+                      <li>
+                        <a class="hover:bg-[#383a40]">
+                          <div class="flex gap-3 hover:text-white" title="DOOM: The Dark Ages">
+                             <img 
+                      src="./public/images/svg/menumobile/DOOM.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        DOOM: The Dark Ages
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Action Shooter
+                      </div>
+                    </div>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- #endregion num7.4-->
+                       <!-- #region num7.5-->
+                      <li>
+                        <a class="hover:bg-[#383a40]">
+                          <div class="flex gap-3 hover:text-white" title="Heroes of the Storm">
+                             <img 
+                      src="./public/images/svg/menumobile/Heroes.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Heroes of the Storm
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        MOBA
+                      </div>
+                    </div>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- #endregion num7.5-->
+                       <!-- #region num7.6-->
+                      <li>
+                        <a class="hover:bg-[#383a40]">
+                          <div class="flex gap-3 hover:text-white" title="Sea of Thieves">
+                             <img 
+                      src="./public/images/svg/menumobile/Sea.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Sea of Thieves
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Action Adventure
+                      </div>
+                    </div>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- #endregion num7.6-->
+                       <!-- #region num7.7-->
+                      <li>
+                        <a class="hover:bg-[#383a40]">
+                          <div class="flex gap-3 hover:text-white" title="The Outer Worlds 2">
+                             <img 
+                      src="./public/images/svg/menumobile/Outer.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                       The Outer Worlds 2
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                        Action RPG
+                      </div>
+                    </div>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- #endregion num7.7-->
+                       <!-- #region num7.8-->
+                      <li>
+                        <a class="hover:bg-[#383a40]">
+                          <div class="flex gap-3 hover:text-white" title="Tony Hawk’s Pro Skater 3 + 4">
+                             <img 
+                      src="./public/images/svg/menumobile/Tony.svg"
+                      alt="" class="size-10"/>
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[12px] font-not font-bold">
+                        Tony Hawk’s Pro Skater 3 + 4
+                      </div>
+                      <div
+                        class="text-[12px] text-[rgba(255,255,255,0.478)] font-not" >
+                       Extreme Action Sports
+                      </div>
+                    </div>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- #endregion num7.8-->
+                    </ul>
+                  </div>        
+                 </div>
+            
+              <svg class="meka-menu-drop-down-label__icon absolute left-197" width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" slot="icon">
+					    <path d="M18.646 9.354a.5.5 0 0 0 0-.707l-.703-.704a.5.5 0 0 0-.707 0L12 13.17 6.764 7.943a.5.5 0 0 0-.707 0l-.703.704a.5.5 0 0 0 0 .707l6.292 6.293a.5.5 0 0 0 .708 0l6.293-6.293Z"></path>
+				      </svg>
+            </div>
+            <!-- #endregion MoreDesktop -->
+          </div>
+          <!-- #region search-->
+          <div class="bg-[#23252B] h-14 w-150! rounded-md flex flex-row items-center gap-3 hover:bg-[#303237] ">
+            <div>
+               <img 
+                      src="./public/images/svg/search.svg"
+                      alt="" class="size-6 ml-5 "/>
+            </div>
+            <div class="">
+              <input type="search" id="input" class=" text-[16px] text-[gray] font-bold font-not hover:text-white "
+              placeholder="Search shop">
+            </div>
+            
+          </div>
+          <!-- #endregion search-->
+         
+          <!-- #region balanceDesktop-->
+          <div class="dropdown dropdown-hover dropdown-bottom dropdown-end">
+              <div
+                tabindex="0"
+                role="button"
+                class="flex items-center justify-center font-not font-bold text-[14px] rounded-[5px] h-14 w-50 bg-[#23252B] flex-row gap-2 duration-150 transition-all hover:text-white hover:bg-[#23252B] p-4 group mb-2.5"
+              >
+               
+                <span class="text-[#ffffffb8] group-hover:text-white font-bold">Battle.net Balance</span>
+                <svg class=" meka-menu-drop-down-label__icon  " width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 24 24" slot="icon">
+					    <path stroke="none" fill="#ffffffb8" d="M18.646 9.354a.5.5 0 0 0 0-.707l-.703-.704a.5.5 0 0 0-.707 0L12 13.17 6.764 7.943a.5.5 0 0 0-.707 0l-.703.704a.5.5 0 0 0 0 .707l6.292 6.293a.5.5 0 0 0 .708 0l6.293-6.293Z"></path>
+				      </svg>
+              </div>
+              <div
+                tabindex="1"
+                class="dropdown-content menu bg-[#1A1C23] rounded-sm z-1 w-80 shadow-sm border-gray-600 p-0 gap-0"
+              >
+               
+                <div
+                  class="flex flex-row justify-start items-center gap-2 rounded-[5px] duration-150 transition-all hover:bg-[#23252B] p-3 group mx-2 mt-2"
+                >
+                    <div class="flex gap-3">
+                    <img
+                      src="./public/images/svg/menumobile/Balance.svg"
+                      alt=""
+                      class="size-6 group-hover:fill-white"
+                    />
+                    
+                  </div>
+                  <span class="text-[#808080] text-[16px] group-hover:text-white  font-not w-fit"
+                    >Add Balance</span
+                  >
+                </div>
+                <div
+                  class="flex flex-row justify-start items-center gap-2 rounded-[5px] duration-150 transition-all hover:bg-[#23252B] group p-3 group mx-2 mt-2 "
+                >
+                    <div class="flex   gap-3">
+                    <img
+                      src="./public/images/svg/menumobile/Gift.svg"
+                      alt=""
+                      class="size-6 "
+                    />
+                    
+                  </div>
+                  <span class="text-[#808080] text-[16px] group-hover:text-white font-not w-fit"
+                    >  Gift Balance </span
+                  >
+                </div>
+                 <div
+                  class="flex flex-row justify-start items-center gap-2 rounded-[5px] duration-150 transition-all hover:bg-[#23252B] p-3 group mx-2 mt-2"
+                >
+                    <div class="flex gap-3">
+                    <img
+                      src="./public/images/svg/menumobile/History.svg"
+                      alt=""
+                      class="size-6"
+                    />
+                    
+                  </div>
+                  <span class="text-[#808080] text-[16px] group-hover:text-white font-not w-fit"
+                    >Balance History</span
+                  >
+                </div>
+                  <div
+                  class="flex flex-row justify-start items-center gap-2 rounded-[5px] duration-150 transition-all hover:bg-[#23252B] p-3 group mx-2 mt-2 mb-2"
+                >
+                    <div class="flex gap-3">
+                   <img
+                      src="./public/images/svg/menumobile/Help.svg"
+                      alt=""
+                      class="size-6"
+                    />
+                    
+                  </div>
+                  <span class="text-[#808080] text-[16px] group-hover:text-white font-not w-fit"
+                    > Balance Help</span
+                  >
+                </div>
+               
+              </div>
+            </div>
+             <!-- #endregion balanceDesktop-->
+
+
+      
+        </div>
       </header>
       <!-- #endregion header-->
+     
       <!-- #region menuMobile-->
       <div
-        class="menuMobile w-[85vw] h-screen bg-[#22242c] relative -left-full transition-all duration-200 px-2"
+        class="menuMobile w-[70vw]  h-screen bg-[#22242c] relative -left-full transition-all duration-200 px-2"
       >
-        <div class="headermenuMobile p-2">
+        <div class="headermenuMobile p-2 flex ">
           <div
-            class="close w-10 h-10 text-[28px] rounded-md flex justify-center items-center text-white bg-[#353e52]"
+            class="close w-10 h-10 text-[28px] hover:bg-white/10 rounded-md flex justify-center items-center text-white bg-[#353e52]"
           >
             &times;
           </div>
-          <!-- <a href="#" class="w-[147px] h-6 mx-auto relative top-5 text-white">
-            <img src="./svg/battele.svg" alt="">
-          </a> -->
+           <a href="#" class="w-40  flex justify-center items-center h-9 mx-auto text-white">
+            <img src="./public/images/svg/battele.svg" alt="">
+          </a>
         </div>
         <!-- #region acordion-->
         <div class="overflow-y-scroll h-[calc(100vh-56px)]">
@@ -61,15 +1022,13 @@
                 <div class="p-1 flex flex-col gap-5">
                   <!-- #region num1.1-->
                   <div class="flex gap-3">
-                      <img
-                        src="./public/images/svg/menumobile.svg/worldwarcraft.svg"
-                        alt=""
-                         class="size-12"
-                      />
+                    <img
+                      src="./public/images/svg/menumobile/worldwarcraft.svg"
+                      alt=""
+                      class="size-12"
+                    />
                     <div class="flex flex-col gap-1">
-                      <div
-                        class="text-[16px] font-not font-bold transition-all duration-100 hover:bg-[rgb(17,18,24)]"
-                      >
+                      <div class="text-[16px] font-not font-bold">
                         World of Warcraft
                       </div>
                       <div
@@ -81,16 +1040,14 @@
                   </div>
                   <!-- #endregion num1.1-->
                   <!-- #region num1.2-->
-                  <div class="flex gap-3">
-                      <img
-                        src="./public/images/svg/menumobile.svg/warcraftclasssic.svg"
-                        alt=""
-                         class="size-12"
-                      />
+                  <div class="flex gap-3 p-1">
+                    <img
+                      src="./public/images/svg/menumobile/warcraftclasssic.svg"
+                      alt=""
+                      class="size-12"
+                    />
                     <div class="flex flex-col gap-1">
-                      <div
-                        class="text-[16px] font-not font-bold transition-all duration-100 hover:bg-[rgb(17,18,24)]"
-                      >
+                      <div class="text-[16px] font-not font-bold">
                         World of Warcraft classic
                       </div>
                       <div
@@ -103,15 +1060,13 @@
                   <!-- #endregion num1.2-->
                   <!-- #region num1.3-->
                   <div class="flex gap-3">
-                      <img
-                        src="./public/images/svg/menumobile.svg/warcraftrumble.svg"
-                        alt=""
-                         class="size-12"
-                      />
+                    <img
+                      src="./public/images/svg/menumobile/warcraftrumble.svg"
+                      alt=""
+                      class="size-12"
+                    />
                     <div class="flex flex-col gap-1">
-                      <div
-                        class="text-[16px] font-not font-bold transition-all duration-100 hover:bg-[rgb(17,18,24)]"
-                      >
+                      <div class="text-[16px] font-not font-bold">
                         Warcraft Rumble
                       </div>
                       <div
@@ -124,17 +1079,13 @@
                   <!-- #endregion num1.3-->
                   <!-- #region num1.4-->
                   <div class="flex gap-3">
-                      <img
-                        src="./public/images/svg/menumobile.svg/warcraft.svg"
-                        alt=""
-                         class="size-12"
-                      />
+                    <img
+                      src="./public/images/svg/menumobile/warcraft.svg"
+                      alt=""
+                      class="size-12"
+                    />
                     <div class="flex flex-col gap-1">
-                      <div
-                        class="text-[16px] font-not font-bold transition-all duration-100 hover:bg-[rgb(17,18,24)]"
-                      >
-                        Warcraft
-                      </div>
+                      <div class="text-[16px] font-not font-bold">Warcraft</div>
                       <div
                         class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
                       >
@@ -146,6 +1097,7 @@
                 </div>
               </div>
             </div>
+            <!-- #endregion acordion1-->
             <!-- #region acordion2-->
             <div
               class="collapse collapse-arrow has-checked:bg-[rgba(255,255,255,0.035)] rounded-md"
@@ -158,17 +1110,15 @@
                 class="collapse-content text-sm bg-[rgb(17,18,24)] rounded-xs flex flex-col gap-2"
               >
                 <div class="p-1 flex flex-col gap-5">
-                  <!-- #region num1.1-->
+                  <!-- #region num2.1-->
                   <div class="flex gap-3">
-                      <img
-                        src="./public/images/svg/menumobile.svg/diabloIV.svg"
-                        alt=""
-                         class="size-12"
-                      />
+                    <img
+                      src="./public/images/svg/menumobile/diabloIV.svg"
+                      alt=""
+                      class="size-12"
+                    />
                     <div class="flex flex-col gap-1">
-                      <div
-                        class="text-[16px] font-not font-bold transition-all duration-100 hover:bg-[rgb(17,18,24)]"
-                      >
+                      <div class="text-[16px] font-not font-bold">
                         Diablo IV
                       </div>
                       <div
@@ -178,18 +1128,16 @@
                       </div>
                     </div>
                   </div>
-                  <!-- #endregion num1.1-->
-                  <!-- #region num1.2-->
+                  <!-- #endregion num2.1-->
+                  <!-- #region num2.2-->
                   <div class="flex gap-3">
-                      <img
-                        src="./public/images/svg/menumobile.svg/Diablo Immortal.svg"
-                        alt=""
-                         class="size-12"
-                      />
+                    <img
+                      src="./public/images/svg/menumobile/DiabloImmortal.svg"
+                      alt=""
+                      class="size-12"
+                    />
                     <div class="flex flex-col gap-1">
-                      <div
-                        class="text-[16px] font-not font-bold transition-all duration-100 hover:bg-[rgb(17,18,24)]"
-                      >
+                      <div class="text-[16px] font-not font-bold">
                         Diablo Immortal
                       </div>
                       <div
@@ -199,18 +1147,16 @@
                       </div>
                     </div>
                   </div>
-                  <!-- #endregion num1.2-->
-                  <!-- #region num1.3-->
+                  <!-- #endregion num2.2-->
+                  <!-- #region num2.3-->
                   <div class="flex gap-3">
-                      <img
-                        src="./public/images/svg/menumobile.svg/Diablo III.svg"
-                        alt=""
-                         class="size-12"
-                      />
+                    <img
+                      src="./public/images/svg/menumobile/DiabloIII.svg"
+                      alt=""
+                      class="size-12"
+                    />
                     <div class="flex flex-col gap-1">
-                      <div
-                        class="text-[16px] font-not font-bold transition-all duration-100 hover:bg-[rgb(17,18,24)]"
-                      >
+                      <div class="text-[16px] font-not font-bold">
                         Diablo III
                       </div>
                       <div
@@ -220,18 +1166,16 @@
                       </div>
                     </div>
                   </div>
-                  <!-- #endregion num1.3-->
-                  <!-- #region num1.4-->
+                  <!-- #endregion num2.3-->
+                  <!-- #region num2.4-->
                   <div class="flex gap-3">
-                      <img
-                        src="./public/images/svg/menumobile.svg/Diablo II.svg"
-                        alt=""
-                         class="size-12"
-                      />
+                    <img
+                      src="./public/images/svg/menumobile/DiabloII.svg"
+                      alt=""
+                      class="size-12"
+                    />
                     <div class="flex flex-col gap-1 justify-center">
-                      <div
-                        class="text-[16px] font-not font-bold transition-all duration-100 hover:bg-[rgb(17,18,24)]"
-                      >
+                      <div class="text-[16px] font-not font-bold">
                         Diablo II: Resurrected
                       </div>
                       <div
@@ -241,22 +1185,499 @@
                       </div>
                     </div>
                   </div>
-                  <!-- #endregion num1.4-->
+                  <!-- #endregion num2.4-->
 
-                  <!-- #region num1.5-->
+                  <!-- #region num2.5-->
                   <div class="flex gap-3 items-center-center">
                     <img
-                      src="./public/images/svg/menumobile.svg/Diablo.svg"
+                      src="./public/images/svg/menumobile/Diablo.svg"
                       alt=""
                       class="size-12"
                     />
                     <div
                       class="flex flex-col gap-1 items-center justify-center"
                     >
+                      <div class="text-[16px] font-not font-bold">Diablo</div>
                       <div
-                        class="text-[16px] font-not font-bold transition-all duration-100 hover:bg-[rgb(17,18,24)]"
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
                       >
-                        Diablo
+                        Action RPG
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num2.5-->
+                </div>
+              </div>
+            </div>
+            <!-- #endregion acordion2-->
+            <!-- #region acordion3-->
+            <div
+              class="collapse w-full collapse-arrow has-checked:bg-[rgba(255,255,255,0.035)] rounded-md"
+            >
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title bg-transparent w-fit font-not">
+                Overwatch
+              </div>
+              <div
+                class="collapse-content text-sm bg-[rgb(17,18,24)] rounded-xs flex flex-col gap-2"
+              >
+                <div class="p-1 flex flex-col gap-5">
+                  <div class="flex gap-3">
+                    <img
+                      src="./public/images/svg/menumobile/overwatch.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">
+                        Overwatch 2
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Team-Based Action Game
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #endregion acordion3-->
+            <!-- #region acordion4-->
+            <div
+              class="collapse w-full collapse-arrow has-checked:bg-[rgba(255,255,255,0.035)] rounded-md"
+            >
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title bg-transparent w-fit font-not">
+                Hearthstone
+              </div>
+              <div
+                class="collapse-content text-sm bg-[rgb(17,18,24)] rounded-xs flex flex-col gap-2"
+              >
+                <div class="p-1 flex flex-col gap-5">
+                  <div class="flex gap-3">
+                    <img
+                      src="./public/images/svg/menumobile/Hearthstone.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">
+                        Hearthstone
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Strategy Card Game
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #endregion acordion4-->
+            <!-- #region acordion5-->
+            <div
+              class="collapse collapse-arrow has-checked:bg-[rgba(255,255,255,0.035)] rounded-md"
+            >
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title bg-transparent w-fit font-not">
+                StarCraft
+              </div>
+              <div
+                class="collapse-content text-sm bg-[rgb(17,18,24)] rounded-xs flex flex-col gap-2"
+              >
+                <div class="p-1 flex flex-col gap-5">
+                  <!-- #region num5.1-->
+                  <div class="flex gap-3">
+                    <img
+                      src="./public/images/svg/menumobile/StarCraftII.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">
+                        StarCraft II
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Real-time Strategy
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num5.1-->
+                  <!-- #region num5.2-->
+                  <div class="flex gap-3 p-1">
+                    <img
+                      src="./public/images/svg/menumobile/starcraft.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">
+                        StarCraft
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Real-time Strategy
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- #endregion num5.2-->
+            </div>
+            <!-- #endregion acordion5-->
+            <!-- #region acordion6-->
+            <div
+              class="collapse collapse-arrow has-checked:bg-[rgba(255,255,255,0.035)] rounded-md"
+            >
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title bg-transparent w-fit font-not">
+                Call of Duty
+              </div>
+              <div
+                class="collapse-content text-sm bg-[rgb(17,18,24)] rounded-xs flex flex-col gap-2"
+              >
+                <div class="p-1 flex flex-col gap-5">
+                  <!-- #region num6.1-->
+                  <div class="flex gap-3">
+                    <img
+                      src="./public/images/svg/menumobile/1.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">
+                        Black Ops 7
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action Shooter
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num6.1-->
+
+                  <!-- #region num6.2-->
+                  <div class="flex gap-3 p-1">
+                    <img
+                      src="./public/images/svg/menumobile/2.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">
+                        Black Ops 6
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action Shooter
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num6.2-->
+
+                  <!-- #region num6.3-->
+                  <div class="flex gap-3 p-1">
+                    <img
+                      src="./public/images/svg/menumobile/3.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">Warzone</div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action Shooter
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num6.3-->
+
+                  <!-- #region num6.4-->
+                  <div class="flex gap-3 p-1">
+                    <img
+                      src="./public/images/svg/menumobile/4.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">
+                        Modern Warfare III
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action Shooter
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num6.4-->
+
+                  <!-- #region num6.5-->
+                  <div class="flex gap-3 p-1">
+                    <img
+                      src="./public/images/svg/menumobile/5.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">
+                        Modern Warfare II
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action Shooter
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num6.5-->
+
+                  <!-- #region num6.6-->
+                  <div class="flex gap-3 p-1">
+                    <img
+                      src="./public/images/svg/menumobile/6.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">Vanguard</div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action Shooter
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num6.6-->
+
+                  <!-- #region num6.7-->
+                  <div class="flex gap-3 p-1">
+                    <img
+                      src="./public/images/svg/menumobile/7.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">
+                        Black Ops Cold War
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action Shooter
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num6.7-->
+
+                  <!-- #region num6.8-->
+                  <div class="flex gap-3 p-1">
+                    <img
+                      src="./public/images/svg/menumobile/8.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">
+                        Modern Warfare
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action Shooter
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num6.8-->
+
+                  <!-- #region num6.9-->
+                  <div class="flex gap-3 p-1">
+                    <img
+                      src="./public/images/svg/menumobile/9.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">
+                        Modern Warfare 2 Campaign Remastered
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action Shooter
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num6.9-->
+
+                  <!-- #region num6.10-->
+                  <div class="flex gap-3 p-1">
+                    <img
+                      src="./public/images/svg/menumobile/10.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">
+                        Black Ops 4
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action Shooter
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num6.10-->
+                </div>
+              </div>
+            </div>
+            <!-- #endregion acordion6-->
+          <!-- #region acordion7-->
+            <div
+              class="collapse collapse-arrow has-checked:bg-[rgba(255,255,255,0.035)] rounded-md"
+            >
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title bg-transparent w-fit font-not">
+                More
+              </div>
+              <div
+                class="collapse-content text-sm bg-[rgb(17,18,24)] rounded-xs flex flex-col gap-2"
+              >
+                <div class="p-1 flex flex-col gap-5">
+                  <!-- #region num7.1-->
+                  <div class="flex gap-3">
+                    <img
+                      src="./public/images/svg/menumobile/Avowed.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">
+                        Avowed
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                       First-person Fantasy RPG
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num7.1-->
+
+                  <!-- #region num7.2-->
+                  <div class="flex gap-3 p-1">
+                    <img
+                      src="./public/images/svg/menumobile/Blizzard.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">
+                      Blizzard Arcade Collection
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Bundle
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num7.2-->
+
+                  <!-- #region num7.3-->
+                  <div class="flex gap-3 p-1">
+                    <img
+                      src="./public/images/svg/menumobile/crush.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">Crash Bandicoot 4</div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Platformer
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num7.3-->
+
+                  <!-- #region num7.4-->
+                  <div class="flex gap-3 p-1">
+                    <img
+                      src="./public/images/svg/menumobile/DOOM.svg"
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">
+                       DOOM: The Dark Ages
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                        Action Shooter
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num7.4-->
+
+                  <!-- #region num7.5-->
+                  <div class="flex gap-3 p-1">
+                    <img
+                      src="./public/images/svg/menumobile/Heroes.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">
+                       Heroes of the Storm
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                      MOBA
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num7.5-->
+
+                  <!-- #region num7.6-->
+                  <div class="flex gap-3 p-1">
+                    <img
+                      src="./public/images/svg/menumobile/Sea.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">Sea of Thieves</div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                         Action Adventure
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num7.6-->
+
+                  <!-- #region num7.7-->
+                  <div class="flex gap-3 p-1">
+                    <img
+                      src="./public/images/svg/menumobile/Outer.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">
+                        The Outer Worlds 2
                       </div>
                       <div
                         class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
@@ -265,71 +1686,119 @@
                       </div>
                     </div>
                   </div>
-                  <!-- #endregion num1.5-->
+                  <!-- #endregion num7.7-->
+
+                  <!-- #region num7.8-->
+                  <div class="flex gap-3 p-1">
+                    <img
+                      src="./public/images/svg/menumobile/Tony.svg"
+                      alt=""
+                      class="size-12"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold">
+                        Tony Hawk’s Pro Skater 3 + 4
+                      </div>
+                      <div
+                        class="text-[14px] text-[rgba(255,255,255,0.478)] font-not"
+                      >
+                       Extreme Action Sports
+                      </div>
+                    </div>
+                  </div>
+                  <!-- #endregion num7.8-->
+
+                
                 </div>
               </div>
             </div>
-            <!-- #region acordion3-->
-            <div class="collapse collapse-arrow">
-              <input type="radio" name="my-accordion-2" />
-              <div class="collapse-title w-fit">
-                How do I update my profile information?
-              </div>
-              <div class="collapse-content text-sm">
-                Go to "My Account" settings and select "Edit Profile" to make
-                changes.
-              </div>
-            </div>
-            <!-- #region acordion4-->
-            <div class="collapse collapse-arrow">
-              <input type="radio" name="my-accordion-2" checked="checked" />
-              <div class="collapse-title w-fit">
-                How do I create an account?
-              </div>
-              <div class="collapse-content text-sm">
-                Click the "Sign Up" button in the top right corner and follow
-                the registration process.
-              </div>
-            </div>
-            <!-- #region acordion5-->
-            <div class="collapse collapse-arrow">
-              <input type="radio" name="my-accordion-2" checked="checked" />
-              <div class="collapse-title w-fit">
-                How do I create an account?
-              </div>
-              <div class="collapse-content text-sm">
-                Click the "Sign Up" button in the top right corner and follow
-                the registration process.
-              </div>
-            </div>
-            <!-- #region acordion6-->
-            <div class="collapse collapse-arrow">
-              <input type="radio" name="my-accordion-2" checked="checked" />
-              <div class="collapse-title w-fit">
-                How do I create an account?
-              </div>
-              <div class="collapse-content text-sm">
-                Click the "Sign Up" button in the top right corner and follow
-                the registration process.
-              </div>
-            </div>
-            <!-- #region acordion7-->
-            <div class="collapse collapse-arrow">
-              <input type="radio" name="my-accordion-2" checked="checked" />
-              <div class="collapse-title w-fit">
-                How do I create an account?
-              </div>
-              <div class="collapse-content text-sm">
-                Click the "Sign Up" button in the top right corner and follow
-                the registration process.
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- #endregion acordion-->
+            <!-- #endregion acordion7-->
       </div>
+       <!-- #region Balance-->
+      <div
+              class="collapse collapse-arrow has-checked:bg-[rgb(17,18,24)] rounded-md text-white font-obj font-bold container"
+            >
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title bg-transparent w-fit font-not">
+                Battle.net Balance 
+              </div>
+              <div
+                class="collapse-content text-sm bg-[rgb(17,18,24)] rounded-xs flex flex-col gap-2  font-not"
+              >
+                <div class="p-1 flex flex-col gap-5 cursor-pointer">
+                  <!-- #region Balance1-->
+                  <div class="flex gap-3">
+                    <img
+                      src="./public/images/svg/menumobile/Balance.svg"
+                      alt=""
+                      class="size-6"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold text-[#808080]">
+                       Add Balance
+                      </div>
+                       </div>
+                  </div>
+                  <!-- #endregion Balance1-->
+                    <!-- #region Balance2-->
+                  <div class="flex gap-3">
+                    <img
+                      src="./public/images/svg/menumobile/Gift.svg"
+                      alt=""
+                      class="size-6"
+                    />
+                    <div class="flex flex-col gap-1">
+                      <div class="text-[16px] font-not font-bold text-[#808080]">
+                      Gift Balance
+                      </div>
+                       </div>
+                  </div>
+                  <!-- #endregion Balance2-->
+                    <!-- #region Balance3-->
+                  <div class="flex gap-3">
+                    <img
+                      src="./public/images/svg/menumobile/History.svg"
+                      alt=""
+                      class="size-6"
+                    />
+                    <div class="flex flex-row gap-1">
+                      <div class="text-[16px] font-not font-bold text-[#808080]">
+                       Balance History
+                      </div>
+                         <img
+                      src="./public/images/svg/menumobile/felesh.svg"
+                      alt=""
+                      class="size-3 "
+                    />
+                       </div>
+                  </div>
+                  <!-- #endregion Balance3-->
+                    <!-- #region Balance4-->
+                  <div class="flex gap-3">
+                    <img
+                      src="./public/images/svg/menumobile/Help.svg"
+                      alt=""
+                      class="size-6"
+                    />
+                    <div class="flex flex-row gap-1">
+                      <div class="text-[16px] font-not font-bold text-[#808080]">
+                      Balance Help
+                      </div>
+                       <img
+                      src="./public/images/svg/menumobile/felesh.svg"
+                      alt=""
+                      class="size-3 "
+                    />
+                       </div>
+                  </div>
+                  <!-- #endregion Balance4-->
+                   
+                  <!-- #endregion Balance-->
       <!-- #endregion menuMobile-->
     </div>
+
+   
+
     <!-- #endregion wraper-->
 
     <script>
@@ -343,6 +1812,12 @@
         menuMobile.classList.remove("!left-0");
         menuMobile.classList.add("!-left-[100%]");
       });
+      var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
     </script>
   </body>
 </html>
